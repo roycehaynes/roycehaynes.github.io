@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Do things, tell people - Royce Haynes</title><link>http://www.roycehaynes.com/</link><description></description><lastBuildDate>Thu, 08 Aug 2013 00:00:00 -0600</lastBuildDate><item><title>Do Product Faster</title><link>http://www.roycehaynes.com/do-product-faster.html</link><description>&lt;p&gt;My Mom thinks my line of work is magic. When I told her four months ago that I was going to be a Hackstar at Techstars Boulder, she assumed I'd be locked in a room making all the Internets. Well Mommy, it's sorta like that.&lt;/p&gt;
+&lt;p&gt;A &lt;a href="http://www.techstars.com/hackstars/"&gt;Hackstar&lt;/a&gt; is a software or designer craftsman who has one primary goal: &lt;mark&gt;do product faster&lt;/mark&gt;. What does this mean? Unlike Techstars founders, Hackstars have the luxury of focusing only on product and not other stuff that comes with founding a company. Whether building out features or designing web user experiences, Hackstars spend a good part of the three-month camp making all things product-oriented happen.&lt;/p&gt;
+&lt;p&gt;I had the pleasure working with two companies: &lt;a href="https://shopventory.com/"&gt;Shopventory&lt;/a&gt; and &lt;a href="http://adsnative.com/"&gt;Adsnative&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Shopventory is an inventory management tool for mobile point of sales (think PayPal and Square) ran by a duo of San Diego engineers. If you run a shop, use Square or PayPal, and have a &lt;a href="http://www.urbandictionary.com/define.php?term=guap"&gt;guap&lt;/a&gt; of merchandise, you will perfectly understand the problem at hand. I helped them with features like accepting payments, inventory items from PayPal, and abstracting how data is modeled and stored to support future integrations. &lt;/p&gt;
+&lt;p&gt;Adsnative makes it simple to integrate high-quality content into the organic experience of, say, a mobile or web app. If you're a publisher or advertiser, you'd use this tool to make ads look like everyday content on your mobile or web site. I did several things for this group of Berkley guys like interface with YouTube's API to provide feeds for easy campaign creation, set up vagrant for easy dev setup, and re-factored a feed parser to better parse RSS and web articles.&lt;/p&gt;
+&lt;p&gt;Additionally, I helped build the official Techstars Demo Day app, which will be used to broadcast &lt;a href="http://demoday.techstars.com/"&gt;TS Boulder demo day&lt;/a&gt; and others. It's pretty sweet.&lt;/p&gt;
+&lt;p&gt;Techstars Boulder is like an exclusive summer camp that hooks Techstars founders up. Founders learn how to run a company with respect to being honest with themselves, and their team and mentors. They get exposure from wise and successful entrepreneurs and VCs like David Cohen and Brad Feld. The list goes on and on, and it sums up to a mind blowing experience. For Hackstars, we get to experience 99% of the program like the founders minus the pressure of making hard decisions and building a successful company. Plus, we get hooked up through getting-in early with companies that are deemed to be unfairly successful.&lt;/p&gt;
+&lt;p&gt;Techstars Boulder 2013, you've been awesome. The friendships gained, knowledge acquired, and the experiences and moments enjoyed will welcomely haunt me forever. Thanks to Eugene, Luke, and Techstars for the opportunity. To others I've shared drinks with including &lt;a href="https://twitter.com/crystalschang"&gt;Crystal&lt;/a&gt; and &lt;a href="https://twitter.com/ChaseCourington"&gt;Chase&lt;/a&gt;, I will cherish our time together. &lt;/p&gt;
+&lt;p&gt;As B.B. King once said, &lt;a href="http://www.youtube.com/watch?v=XLiB0OONjec"&gt;let the good times roll&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;-- Royce 
+(Follow me on &lt;a href="https://twitter.com/roycehaynes"&gt;Twitter&lt;/a&gt;)&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;Want the quick 'n dirty on becoming a Hackstar? &lt;a href="http://www.techstars.com/hackstars/"&gt;Learn more about the Techstar Hackstar program&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Royce Haynes</dc:creator><pubDate>Thu, 08 Aug 2013 00:00:00 -0600</pubDate><guid isPermaLink="false">tag:www.roycehaynes.com,2013-08-08:do-product-faster.html</guid><category>startup</category><category>techstars</category></item><item><title>Always Be Testing</title><link>http://www.roycehaynes.com/always-be-testing-python.html</link><description>&lt;p&gt;&lt;img src="http://i.imgur.com/egPW2L8.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;You're a developer and you get handed over shitty code. The only proof that the code works is someone who uses the software and complains to you that it's buggy. What's a developer to do? &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Whether you're handling new or legacy code, first thing is to &lt;mark&gt;start testing&lt;/mark&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;When I first started writing software I thought testing was for the birds. Testing, in my mind, absorbed time and energy away from building features and shipping. But after supporting my own and others code, I realized a couple of things. Supporting software sucks and making bad code good is typically impossible without rewriting. This is true unless you have clear documentation and a test suite.&lt;/p&gt;
+&lt;p&gt;Testing code is about the end game. Would you rather be fixing bugs and rewriting months down the road or implementing new features? I'm guessing the latter. &lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;Testing saves money, jobs, and lives. - &lt;a href="https://django.2scoops.org/"&gt;Daniel Greenfeld&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Further, Daniel Greenfeld (author of Two Scoops of Django) points out that the "lack of stability in a project can mean the loss of clients, contracts, and even employment." More important than implementing new features is reducing risks like those mentioned by Daniel. No developer wants to lose their job because they didn't tests their work.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;&lt;strong&gt;I want to provide you tips...&lt;/strong&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;In this post, I'd like to offer up testing habits that will make you a better developer.&lt;/p&gt;
+&lt;h3&gt;1. Something is better than nothing&lt;/h3&gt;
+
+&lt;p&gt;Make it a habit to start testing. If you don't know where to start, try testing code that is critical to your business like credit card processing, registering a user, or managing confidential information. Unit tests are your best friend for testing these type of tasks.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Remember that creating an automated test suite is not a waste of time, especially when it eliminates clicking through screens manually to resolve bugs.&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;2. Coverage isn't everything.&lt;/h3&gt;
+
+&lt;p&gt;You may think that I'm a fan of 100% test coverage. Well, I'm not. 100% code coverage could be a recipe for failure because the tests may lack real-life use cases. &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It's obvious that 0 percent coverage of a module indicates we have work to do. But what does it mean when we have 70 percent coverage? Do we need to code tests that go after the other 30 percent? - Greg L. Turnquist&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;When faced with partial to no test coverage, work towards increasing coverage by writing new tests that target scenarios the code is expected to handle. This doesn't mean create test cases just to say you have 100% coverage. Be smart and think about how your code is meant to operate then add tests that are useful. &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;In other words, effective coverage trumps 100% coverage.&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;3. Be willing to invest in test fixtures&lt;/h3&gt;
+
+&lt;p&gt;A test fixture is code that typically supports your tests. For example, removing records from a database before running a unit test is a text fixture.&lt;/p&gt;
+&lt;p&gt;Spend time working on test fixtures and the investment will pay off. Not only will your unit tests pass, but you'll have better intuition on how your code should operate. &lt;/p&gt;
+&lt;h3&gt;4. If you aren't convinced on the value of testing, your team won't be either.&lt;/h3&gt;
+
+&lt;p&gt;You're only as strong as your weakest link. Expect problems if only part of your team believes in the value of testng.&lt;/p&gt;
+&lt;h3&gt;5. Harvesting metrics&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;You can achieve incredible progress if you set a clear goal and find a measure that will drive progress toward that goal - Bill Gates&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To get an idea of how testing helps improve code and reduce bugs you should harvest metrics for validation.&lt;/p&gt;
+&lt;p&gt;Here are steps on how to measure your testing taken from &lt;i&gt;Python Testing Cookbook&lt;/i&gt; by Greg L. Turnquist:
+&lt;ol&gt;
+&lt;li&gt;    Create a spreadsheet to track number of test cases, time to run test suite, date of test run, bugs, and average time per test. &lt;/li&gt;
+    &lt;li&gt;Check the spreadsheet into your code base as another controlled artifact. &lt;/li&gt;
+    &lt;li&gt;Add some graphs to show the curve of test time versus test quantity. &lt;/li&gt;
+    &lt;li&gt;Add a new row of data at least every time you do a release. If you can capture data more often, like once/week or even once/day, that is better. &lt;/li&gt;
+&lt;/ol&gt;&lt;/p&gt;
+&lt;p&gt;Harvesting metrics allows you to point to facts that show why your time writing tests is value added. It's a good reference to justify the importance of testing.&lt;/p&gt;
+&lt;p&gt;"Think of it as a backup for your assertion of quality." - Greg L. Turnquist&lt;/p&gt;
+&lt;h3&gt;6. Capturing a bug in an automated test&lt;/h3&gt;
+
+&lt;p&gt;Whenever a bug occurs in your software, look for an opportunity to write an automated unit test that recreates the error then work towards fixing the problem.&lt;/p&gt;
+&lt;h3&gt;7. Pause to refactor when test suite takes too long to run&lt;/h3&gt;
+
+&lt;p&gt;Tests are meant to be ran multiple times a day. If they take to long to run, you're probably going to run them less often. Take time to refactor when this happens. Profiling your code is just as important as making unit tests, which leads to better performance and costs savings.&lt;/p&gt;
+&lt;h3&gt;8. Be willing to throw away an entire day of changes.&lt;/h3&gt;
+
+&lt;p&gt;One day, you decided to refactor a bunch of code without running existing tests throughout the refactor. You find out that your code breaks unit tests and you have to work towards making things right.&lt;/p&gt;
+&lt;p&gt;If you don't commit early and often, code a little, and test a little then you pretty much wasted a day writing code that doesn't make the cut.&lt;/p&gt;
+&lt;p&gt;Remember to code a little, test a little coupled with commiting to your version control as often as possible. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Royce Haynes</dc:creator><pubDate>Mon, 28 Jan 2013 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:www.roycehaynes.com,2013-01-28:always-be-testing-python.html</guid><category>test</category><category>habit</category><category>python</category><category>quality</category></item></channel></rss>

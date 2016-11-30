@@ -1,0 +1,15 @@
+Developer:    Royce Haynes
+Contact:      royce.haynes@gmail.com
+Twitter:      @roycehaynes
+
+/* SITE */
+Last update:  02/30/15
+Language:     English
+Doctype:      HTML5
+Tools:        Pelican, Python, HTML, CSS, Javascript
+
+/* THANKS */
+Designer: Amber Feng
+Twitter: @amfeng
+From: San Francisco, California, United States
+              
