@@ -19,14 +19,14 @@ html {
 }
 
 body {
-  /*background: #DBD3D8;*/
-  background-color: #FEFCF8;
+  background: #DBD3D8;
+  /*background-color: #FEFCF8;*/
 }
 
 h1, h2 {
   font-family: 'proxima-nova', 'HelveticaNeue', Helvetica, Arial, sans-serif;
   font-weight: normal;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-weight: bold;
 }
 
@@ -147,8 +147,8 @@ img {
 }
 
 .sidebar a.back {
-  /*color: #fff;*/
-  color: #654972;
+  color: #fff;
+  /*color: #654972;*/
   position: absolute;
   top: -2em;
 }

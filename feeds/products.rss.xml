@@ -1,15 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Do things, tell people - Royce Haynes</title><link>http://www.roycehaynes.com/</link><description></description><lastBuildDate>Sun, 22 Dec 2013 00:00:00 -0700</lastBuildDate><item><title>Introducing Chrrp</title><link>http://www.roycehaynes.com/introducing-chrrp.html</link><description>&lt;p&gt;Chrrp is an iOS app that alerts tech founders when something good happens. Using Stripe's API, Chrrp lets you know when a customer signs up or when you make money. It's like a Stripe pager.&lt;/p&gt;
-&lt;p&gt;Chrrp also provides recent info on sign ups, revenue, and charges, all in a simple yet newsy app.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://chrrp.io"&gt;Learn more about Chrrp&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;The Story&lt;/h4&gt;
-&lt;p&gt;Early October, I was gchatting with my friend &lt;a href="http://brandonbrisbon.com"&gt;Brandon Brisbon&lt;/a&gt;. We had our normal exchange - Brandon talked about what he was &lt;a href="http://emailhooks.co/"&gt;working on&lt;/a&gt; and vice versa. Then out of habit we started talking about ideas. The convo went like this: &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Me:&lt;/strong&gt; You know what would be a good app? &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Brandon:&lt;/strong&gt; What?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Me:&lt;/strong&gt; An app that plays MoneyBags by Rick Ross everytime a new customer or payment is added to Stripe.&lt;/p&gt;
-&lt;p&gt;...&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Brandon:&lt;/strong&gt; Hmmm yea its doable, but u think people would pay $X for that?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Me:&lt;/strong&gt; I would.&lt;/p&gt;
-&lt;p&gt;A domain purchase and few lines of code later, we created Chrrp.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://itunes.apple.com/us/app/chrrp/id731623802?ls=1&amp;amp;mt=8"&gt;Download Chrrp now&lt;/a&gt; and let us know what you think. If you have a request, &lt;a href="mailto:royce.haynes+chrrp@gmail.com"&gt;let's chat&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;For updates, &lt;a href="https://twitter.com/roycehaynes"&gt;follow me on twitter&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Royce Haynes</dc:creator><pubDate>Sun, 22 Dec 2013 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:www.roycehaynes.com,2013-12-22:introducing-chrrp.html</guid><category>chrrp</category><category>stripe</category></item></channel></rss>
+<rss version="2.0"><channel><title>Do things, tell people - Royce Haynes - products</title><link>http://www.roycehaynes.com/</link><description></description><lastBuildDate>Sun, 22 Dec 2013 00:00:00 -0700</lastBuildDate><item><title>Introducing Chrrp</title><link>http://www.roycehaynes.com/introducing-chrrp.html</link><description>&lt;p&gt;Chrrp is an iOS app that alerts tech founders when something good happens. Using Stripe's API, Chrrp lets you know when a customer signs up or when you make money. It's like a Stripe pager.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Royce Haynes</dc:creator><pubDate>Sun, 22 Dec 2013 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:www.roycehaynes.com,2013-12-22:/introducing-chrrp.html</guid><category>chrrp</category><category>stripe</category></item></channel></rss>
