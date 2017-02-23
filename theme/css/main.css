@@ -147,8 +147,8 @@ img {
 }
 
 .sidebar a.back {
-  color: #fff;
-  /*color: #654972;*/
+  /*color: #fff;*/
+  color: #654972;
   position: absolute;
   top: -2em;
 }
