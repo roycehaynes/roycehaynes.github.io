@@ -1,0 +1,569 @@
+
+/**
+ * Variables.
+ */
+
+:root {
+  --accent: #49B882;
+  --black: #113654;
+  --light-black: #485d6f;
+  --gray: #A7AEB4;
+  --light-gray: #E7E9EB;
+}
+
+/**
+ * Reset.
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/**
+ * Type.
+ */
+
+html {
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code,
+pre {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/**
+ * Links.
+ */
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/**
+ * Header.
+ */
+
+.header {
+  padding: 36px 12px;
+  text-align: center;
+}
+
+/**
+ * Footer.
+ */
+
+.footer {
+  padding: 72px 12px;
+  text-align: center;
+}
+
+.footer .author-gravatar {
+  height: 100px;
+  width: 100px;
+}
+
+/**
+ * Author.
+ */
+
+.author-gravatar {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-bottom: 6px;
+}
+
+.author-name {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.author-link {
+  color: inherit;
+}
+
+.author-link:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.author-bio {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gray);
+}
+
+.author-twitter {
+  position: relative;
+  display: block;
+  margin-top: 6px;
+  min-height: 28px; /* prevent vertical glitching as button loads */
+}
+
+.author-twitter-mask-color {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--gray);
+  pointer-events: none;
+  mix-blend-mode: color;
+}
+
+.author-twitter-mask-lighten {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255,255,255,.5);
+  pointer-events: none;
+  mix-blend-mode: lighten;
+}
+
+@supports not (mix-blend-mode: color) {
+  .author-twitter-mask-color,
+  .author-twitter-mask-lighten {
+    display: none;
+  }
+}
+
+/**
+ * Main.
+ */
+
+.main {
+  padding: 36px 18px 72px;
+  margin: 0 auto;
+  max-width: 38em;
+}
+
+/**
+ * Index.
+ */
+
+.index-season-list > li + li {
+  margin-top: 48px;
+}
+
+.index-season-name {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gray);
+}
+
+.index-article-title {
+  font-size: 24px;
+  line-height: 1.3;
+  margin-top: 24px;
+  margin-bottom: 2px !important;
+}
+
+.index-article-link {
+  font-weight: inherit;
+  color: var(--black);
+}
+
+.index-article-link:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.index-article-excerpt {
+  color: var(--light-black);
+}
+
+/**
+ * Article.
+ */
+
+.article-title {
+  font-size: 42px;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.article-link {
+  color: inherit;
+  font-weight: inherit;
+}
+
+.article-link:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.article-date {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gray);
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.article-body {
+  position: relative;
+}
+
+/**
+ * Error.
+ */
+
+.error {
+  text-align: center;
+}
+
+/**
+ * Spacing.
+ */
+
+.article-body > *:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+/**
+ * Headings.
+ */
+
+.article-body h1,
+.article-body h2,
+.article-body h3,
+.article-body h4,
+.article-body h5,
+.article-body h6 {
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.article-body h1 {
+  font-size: 42px;
+  margin-top: 96px;
+}
+
+.article-body h2 {
+  font-size: 26px;
+  margin-top: 36px;
+  margin-bottom: 6px !important;
+}
+
+.article-body h3 {
+  margin-top: 36px;
+  margin-bottom: 6px !important;
+}
+
+.article-body h4,
+.article-body h5,
+.article-body h6 {
+  margin-top: 36px;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 2px !important;
+}
+
+/**
+ * Links.
+ */
+
+.article-body a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, var(--accent) 50%);
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  background-position: 0 1em;
+}
+
+/**
+ * Emphasis.
+ */
+
+.article-body strong {
+  font-weight: 600;
+}
+
+/**
+ * Quotes.
+ */
+
+.article-body blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  padding-left: 18px;
+  color: var(--gray);
+  font-style: italic;
+}
+
+.article-body blockquote em {
+  font-style: normal;
+}
+
+.article-body blockquote::after {
+  content: '';
+  position: absolute;
+  top: 0.333em;
+  bottom: 0.333em;
+  left: 0;
+  border-left: 2px solid var(--gray);
+  opacity: 0.6;
+}
+
+/**
+ * Asides.
+ */
+
+.article-body aside {
+  display: block;
+  font-size: 0.8em;
+  font-style: italic;
+  color: var(--gray);
+}
+
+/**
+ * Rules.
+ */
+
+.article-body hr {
+  border: none;
+  height: 2px;
+  width: 10%;
+  background: var(--light-gray);
+  margin: 72px auto !important;
+}
+
+/**
+ * Lists.
+ */
+
+.article-body ol,
+.article-body ul {
+  list-style-position: outside;
+  margin-left: 24px;
+}
+
+.article-body ol,
+.article-body ol ol ol ol {
+  list-style-type: decimal;
+}
+
+.article-body ol ol,
+.article-body ol ol ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.article-body ol ol ol,
+.article-body ol ol ol ol ol ol {
+  list-style-type: lower-roman;
+}
+
+.article-body ul,
+.article-body ul ul ul ul {
+  list-style-type: disc;
+}
+
+.article-body ul ul,
+.article-body ul ul ul ul ul {
+  list-style-type: circle;
+}
+
+.article-body ul ul ul,
+.article-body ul ul ul ul ul ul {
+  list-style-type: square;
+}
+
+.article-body li {
+  margin: 6px 0;
+}
+
+/**
+ * Media.
+ */
+
+.article-body figure {
+  margin: 1.5em 0 !important;
+}
+
+.article-body img {
+  display: block;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.article-body figcaption {
+  display: block;
+  color: var(--gray);
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  text-align: center;
+  font-style: italic;
+}
+
+/**
+ * Code.
+ */
+
+.article-body code,
+.article-body pre {
+  background-color: #EFF1F2;
+  border-radius: 4px;
+}
+
+.article-body code {
+  padding: 0 3px 1px;
+  font-size: 0.8em;
+  /* have to pull them up to offset the smaller font-size */
+  position: relative;
+  top: -1px;
+}
+
+.article-body pre code {
+  padding: 0;
+  border: none;
+}
+
+.article-body pre {
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 18px 24px;
+  white-space: pre-wrap;
+}
+
+/**
+ * Tables.
+ */
+
+.article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  /* mimic paragraph margins */
+  margin: 1.5em 0 !important;
+}
+
+.article-body tr {
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.article-body tr:first-child {
+  border-top: 3px solid var(--light-gray);
+}
+
+.article-body tr:last-child {
+  border-bottom: 3px solid var(--light-gray);
+}
+
+.article-body td {
+  padding: 0.333em 0;
+}
+
+/**
+ * Navigation.
+ */
+
+.nav {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 12px;
+  overflow: hidden;
+}
+
+.nav > * {
+  float: left;
+}
+
+.nav-mark {
+  width: 100px;
+  text-align: center;
+  line-height: 2.5em; /* vertically centered */
+}
+
+.nav-mark:only-child {
+  float: none;
+  width: auto;
+}
+
+.nav-icon {
+  display: inline-block;
+}
+
+.nav-previous,
+.nav-next {
+  width: calc(50% - 50px);
+}
+
+.nav-previous {
+  text-align: right;
+}
+
+.nav-next {
+  text-align: left;
+}
+
+.nav-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gray);
+}
+
+.nav-link {
+  color: inherit;
+}
+
+.nav-link:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
