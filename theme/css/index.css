@@ -21,6 +21,10 @@
 
 body {
   margin: 0;
+  color: #333333;
+  font-family: georgia, georgia, serif;
+  /*font-weight: normal;*/
+  font-size: 18px;
 }
 
 h1,
@@ -52,7 +56,6 @@ p {
 
 html {
   font-size: 18px;
-  font-family: Roboto, sans-serif;
   line-height: 1.6;
   color: var(--black);
   -webkit-font-smoothing: antialiased;
@@ -286,6 +289,8 @@ a:hover {
 }
 
 .article-body h1 {
+  font-family: futura, georgia, serif;
+  font-weight: bold;
   font-size: 42px;
   margin-top: 96px;
 }
@@ -566,4 +571,9 @@ a:hover {
 .nav-link:hover {
   color: var(--accent);
   text-decoration: none;
+}
+
+::selection {
+    background: #fff882;
+    color: #444444;
 }
