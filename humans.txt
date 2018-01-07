@@ -3,7 +3,7 @@ Contact:      royce.haynes@gmail.com
 Twitter:      @roycehaynes
 
 /* SITE */
-Last update:  03/17/17
+Last update:  01/07/18
 Language:     English
 Doctype:      HTML5
 Tools:        Pelican, Python, HTML, CSS, Javascript
