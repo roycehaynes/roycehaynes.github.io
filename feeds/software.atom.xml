@@ -11,7 +11,7 @@
 &lt;p&gt;-- Royce 
 (Follow me on &lt;a href="https://twitter.com/roycehaynes"&gt;Twitter&lt;/a&gt;)&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;em&gt;Want the quick 'n dirty on becoming a Hackstar? &lt;a href="http://www.techstars.com/hackstars/"&gt;Learn more about the Techstar Hackstar program&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;</content><category term="startup"></category><category term="techstars"></category></entry><entry><title>Always Be Testing</title><link href="http://www.roycehaynes.com/always-be-testing-python.html" rel="alternate"></link><published>2013-01-28T00:00:00-07:00</published><updated>2013-01-28T00:00:00-07:00</updated><author><name>Royce Haynes</name></author><id>tag:www.roycehaynes.com,2013-01-28:/always-be-testing-python.html</id><summary type="html">&lt;p&gt;You're a developer and you get handed over shitty code. The only proof that the code works is someone who uses the software and complains to you that it's buggy. What's a developer to do?&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img src="http://i.imgur.com/egPW2L8.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Want the quick 'n dirty on becoming a Hackstar? &lt;a href="http://www.techstars.com/hackstars/"&gt;Learn more about the Techstar Hackstar program&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;</content><category term="software"></category><category term="startup"></category><category term="techstars"></category></entry><entry><title>Always Be Testing</title><link href="http://www.roycehaynes.com/always-be-testing-python.html" rel="alternate"></link><published>2013-01-28T00:00:00-07:00</published><updated>2013-01-28T00:00:00-07:00</updated><author><name>Royce Haynes</name></author><id>tag:www.roycehaynes.com,2013-01-28:/always-be-testing-python.html</id><summary type="html">&lt;p&gt;You're a developer and you get handed over shitty code. The only proof that the code works is someone who uses the software and complains to you that it's buggy. What's a developer to do?&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img src="http://i.imgur.com/egPW2L8.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;You're a developer and you get handed over shitty code. The only proof that the code works is someone who uses the software and complains to you that it's buggy. What's a developer to do? &lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Whether you're handling new or legacy code, first thing is to &lt;mark&gt;start testing&lt;/mark&gt;&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;When I first started writing software I thought testing was for the birds. Testing, in my mind, absorbed time and energy away from building features and shipping. But after supporting my own and others code, I realized a couple of things. Supporting software sucks and making bad code good is typically impossible without rewriting. This is true unless you have clear documentation and a test suite.&lt;/p&gt;
@@ -50,13 +50,14 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;To get an idea of how testing helps improve code and reduce bugs you should harvest metrics for validation.&lt;/p&gt;
-&lt;p&gt;Here are steps on how to measure your testing taken from &lt;i&gt;Python Testing Cookbook&lt;/i&gt; by Greg L. Turnquist:
+&lt;p&gt;Here are steps on how to measure your testing taken from &lt;i&gt;Python Testing Cookbook&lt;/i&gt; by Greg L. Turnquist:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;    Create a spreadsheet to track number of test cases, time to run test suite, date of test run, bugs, and average time per test. &lt;/li&gt;
     &lt;li&gt;Check the spreadsheet into your code base as another controlled artifact. &lt;/li&gt;
     &lt;li&gt;Add some graphs to show the curve of test time versus test quantity. &lt;/li&gt;
     &lt;li&gt;Add a new row of data at least every time you do a release. If you can capture data more often, like once/week or even once/day, that is better. &lt;/li&gt;
-&lt;/ol&gt;&lt;/p&gt;
+&lt;/ol&gt;
+
 &lt;p&gt;Harvesting metrics allows you to point to facts that show why your time writing tests is value added. It's a good reference to justify the importance of testing.&lt;/p&gt;
 &lt;p&gt;"Think of it as a backup for your assertion of quality." - Greg L. Turnquist&lt;/p&gt;
 &lt;h3&gt;6. Capturing a bug in an automated test&lt;/h3&gt;
@@ -69,4 +70,4 @@
 
 &lt;p&gt;One day, you decided to refactor a bunch of code without running existing tests throughout the refactor. You find out that your code breaks unit tests and you have to work towards making things right.&lt;/p&gt;
 &lt;p&gt;If you don't commit early and often, code a little, and test a little then you pretty much wasted a day writing code that doesn't make the cut.&lt;/p&gt;
-&lt;p&gt;Remember to code a little, test a little coupled with commiting to your version control as often as possible. &lt;/p&gt;</content><category term="test"></category><category term="habit"></category><category term="python"></category><category term="quality"></category></entry></feed>
+&lt;p&gt;Remember to code a little, test a little coupled with commiting to your version control as often as possible. &lt;/p&gt;</content><category term="software"></category><category term="test"></category><category term="habit"></category><category term="python"></category><category term="quality"></category></entry></feed>
