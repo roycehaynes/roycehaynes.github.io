@@ -1,0 +1,167 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="description" content="">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+      <link rel="icon" href="/theme/images/favicon.ico" sizes="any">
+      <link rel="apple-touch-icon" href="/theme/images/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="/theme/css/normalize.css">
+    <link rel="stylesheet" href="/theme/css/style.css">
+
+    <link rel="manifest" href="/theme/images/site.webmanifest">
+    <meta name="theme-color" content="#fafafa">
+
+            <title>Royce Haynes - Always Be Testing</title>
+        <meta charset="utf-8"/>
+        <meta name="generator" content="Pelican"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+        <meta name="tags" content="test"/>
+        <meta name="tags" content="habit"/>
+        <meta name="tags" content="python"/>
+        <meta name="tags" content="quality"/>
+
+</head>
+
+<body>
+
+
+<header class="header-header">
+    <nav class="header-nav">
+        <a aria-current="page" class="title" href="/">
+            <div class="header-navLeft">
+                <img src="/theme/images/adinkrahene-medium.png"
+                     class="header-navLeftImage--1rY1B" alt="Logo"/>
+                <div class="header-navLeftBrand--YVBm8">
+                  Royce Haynes
+                </div>
+            </div>
+        </a>
+    </nav>
+</header>
+
+
+    <div class="layout-parent--S2h1M">
+        <main class="layout-main--16H54">
+            <div class="blog-post-container">
+                <div class="blog-post"><h1 class="post-title--37tBS">Always Be Testing</h1>
+                    <div class="post-date--1g0_w">January 28, 2013</div>
+                    <div>
+                        <p><img src="http://i.imgur.com/egPW2L8.jpg"></p>
+<p>You're a developer and you get handed over shitty code. The only proof that the code works is someone who uses the software and complains to you that it's buggy. What's a developer to do? </p>
+<p><em>Whether you're handling new or legacy code, first thing is to <mark>start testing</mark></em>.</p>
+<p>When I first started writing software I thought testing was for the birds. Testing, in my mind, absorbed time and energy away from building features and shipping. But after supporting my own and others code, I realized a couple of things. Supporting software sucks and making bad code good is typically impossible without rewriting. This is true unless you have clear documentation and a test suite.</p>
+<p>Testing code is about the end game. Would you rather be fixing bugs and rewriting months down the road or implementing new features? I'm guessing the latter. </p>
+<blockquote>
+    <p>Testing saves money, jobs, and lives. - <a href="https://django.2scoops.org/">Daniel Greenfeld</a></p>
+</blockquote>
+
+<p>Further, Daniel Greenfeld (author of Two Scoops of Django) points out that the "lack of stability in a project can mean the loss of clients, contracts, and even employment." More important than implementing new features is reducing risks like those mentioned by Daniel. No developer wants to lose their job because they didn't tests their work.</p>
+<p><i><strong>I want to provide you tips...</strong></i></p>
+<p>In this post, I'd like to offer up testing habits that will make you a better developer.</p>
+<h3>1. Something is better than nothing</h3>
+
+<p>Make it a habit to start testing. If you don't know where to start, try testing code that is critical to your business like credit card processing, registering a user, or managing confidential information. Unit tests are your best friend for testing these type of tasks.</p>
+<p><em>Remember that creating an automated test suite is not a waste of time, especially when it eliminates clicking through screens manually to resolve bugs.</em></p>
+<h3>2. Coverage isn't everything.</h3>
+
+<p>You may think that I'm a fan of 100% test coverage. Well, I'm not. 100% code coverage could be a recipe for failure because the tests may lack real-life use cases. </p>
+<blockquote>
+<p>It's obvious that 0 percent coverage of a module indicates we have work to do. But what does it mean when we have 70 percent coverage? Do we need to code tests that go after the other 30 percent? - Greg L. Turnquist</p>
+</blockquote>
+
+<p>When faced with partial to no test coverage, work towards increasing coverage by writing new tests that target scenarios the code is expected to handle. This doesn't mean create test cases just to say you have 100% coverage. Be smart and think about how your code is meant to operate then add tests that are useful. </p>
+<p><em>In other words, effective coverage trumps 100% coverage.</em></p>
+<h3>3. Be willing to invest in test fixtures</h3>
+
+<p>A test fixture is code that typically supports your tests. For example, removing records from a database before running a unit test is a text fixture.</p>
+<p>Spend time working on test fixtures and the investment will pay off. Not only will your unit tests pass, but you'll have better intuition on how your code should operate. </p>
+<h3>4. If you aren't convinced on the value of testing, your team won't be either.</h3>
+
+<p>You're only as strong as your weakest link. Expect problems if only part of your team believes in the value of testng.</p>
+<h3>5. Harvesting metrics</h3>
+
+<blockquote>
+<p>You can achieve incredible progress if you set a clear goal and find a measure that will drive progress toward that goal - Bill Gates</p>
+</blockquote>
+
+<p>To get an idea of how testing helps improve code and reduce bugs you should harvest metrics for validation.</p>
+<p>Here are steps on how to measure your testing taken from <i>Python Testing Cookbook</i> by Greg L. Turnquist:</p>
+<ol>
+<li>    Create a spreadsheet to track number of test cases, time to run test suite, date of test run, bugs, and average time per test. </li>
+    <li>Check the spreadsheet into your code base as another controlled artifact. </li>
+    <li>Add some graphs to show the curve of test time versus test quantity. </li>
+    <li>Add a new row of data at least every time you do a release. If you can capture data more often, like once/week or even once/day, that is better. </li>
+</ol>
+
+<p>Harvesting metrics allows you to point to facts that show why your time writing tests is value added. It's a good reference to justify the importance of testing.</p>
+<p>"Think of it as a backup for your assertion of quality." - Greg L. Turnquist</p>
+<h3>6. Capturing a bug in an automated test</h3>
+
+<p>Whenever a bug occurs in your software, look for an opportunity to write an automated unit test that recreates the error then work towards fixing the problem.</p>
+<h3>7. Pause to refactor when test suite takes too long to run</h3>
+
+<p>Tests are meant to be ran multiple times a day. If they take to long to run, you're probably going to run them less often. Take time to refactor when this happens. Profiling your code is just as important as making unit tests, which leads to better performance and costs savings.</p>
+<h3>8. Be willing to throw away an entire day of changes.</h3>
+
+<p>One day, you decided to refactor a bunch of code without running existing tests throughout the refactor. You find out that your code breaks unit tests and you have to work towards making things right.</p>
+<p>If you don't commit early and often, code a little, and test a little then you pretty much wasted a day writing code that doesn't make the cut.</p>
+<p>Remember to code a little, test a little coupled with commiting to your version control as often as possible. </p>
+                        <ul class="post-tags--1RXVQ">
+                                    <li class="post-tagItem--kUy9P">
+                                        <a class="post-tagItemLink--2UVyU" href="/tag/test.html">test</a>
+                                    </li>
+                                    <li class="post-tagItem--kUy9P">
+                                        <a class="post-tagItemLink--2UVyU" href="/tag/habit.html">habit</a>
+                                    </li>
+                                    <li class="post-tagItem--kUy9P">
+                                        <a class="post-tagItemLink--2UVyU" href="/tag/python.html">python</a>
+                                    </li>
+                                    <li class="post-tagItem--kUy9P">
+                                        <a class="post-tagItemLink--2UVyU" href="/tag/quality.html">quality</a>
+                                    </li>
+                        </ul>
+                    </div>
+                </div>
+                  <div>
+                    <div class="post-bottomNav--2f6l_">
+                        <div class="post-navLinkContainer--2v9tr">
+                            Next post:
+                            <a class="post-bottomNavLink--AvEhl" href="/money-time-energy.html">
+                                Money, Time, Energy
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    <div class="post-disclosure">
+        <p>
+            Views expressed in “content” (including posts,
+            podcasts, videos) linked on this website or posted in social media and other platforms
+            (collectively, “content distribution outlets”) are my own.
+        </p>
+    </div>
+            </div>
+        </main>
+    </div>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-990RRJCJS1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-990RRJCJS1');
+</script>
+</body>
+</html>
